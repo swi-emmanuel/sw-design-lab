@@ -1,0 +1,14 @@
+/* SW Lab - Global Styles */
+* { box-sizing: border-box; }
+
+body { background: #ddd; }
+
+.page-container { border: 1px dashed red; }
+
+.inner { border: 1px solid red; }
+
+header { background: #aaa; }
+
+.main-content { background: #999; }
+
+aside { background: #888; }
