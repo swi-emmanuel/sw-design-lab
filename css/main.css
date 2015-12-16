@@ -138,7 +138,7 @@ td, th { padding: 0; }
 .clearfix { display: block; }
 
 /* close commented backslash hack */
-.page-container { border: 1px dashed red; width: 100%; height: 100%; min-height: 1000px; background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/noisy_grid.png"); }
+.page-container { width: 100%; height: 100%; min-height: 1000px; background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/noisy_grid.png"); }
 
 .show { display: block; }
 
@@ -153,31 +153,33 @@ h1.logo { margin: 0; padding: 0; display: block; height: 40px; width: 40px; floa
 /* NAVIGATION */
 .main-nav { display: inline-block; float: right; }
 .main-nav ul { margin: 0; padding: 0; }
-.main-nav ul li { display: inline-block; height: 40px; line-height: 40px; float: left; border: 1px dashed orange; }
-.main-nav ul li a { display: block; border: 1px solid orange; width: 100%; height: 100%; }
+.main-nav ul li { display: inline-block; height: 40px; line-height: 40px; float: left; }
+.main-nav ul li a { display: block; width: 100%; height: 100%; }
 
 /* SIDEBAR */
-aside { margin: 0; padding: 0; width: 100%; height: 60px; position: fixed; top: 60px; background: olive; height: 60px; box-shadow: 0 2px 4px #333; }
-@media screen and (min-width: 1025px) { aside { float: left; position: static; margin-top: 60px; background: none; box-shadow: none; border: 1px solid lime; width: 20%; min-height: 500px; } }
-aside .thumb img { display: block; height: 60px; float: left; }
+aside { margin: 0; padding: 0; width: 100%; height: 60px; position: fixed; top: 60px; background: #ccc; height: 60px; box-shadow: 0 2px 4px #333; }
+@media screen and (min-width: 1025px) { aside { float: left; position: static; background: none; box-shadow: none; width: 20%; min-height: 500px; } }
+aside .thumb img { display: block; height: 60px; float: left; border: 1px solid #aaa; }
 @media screen and (min-width: 1025px) { aside .thumb img { height: 100px; position: fixed; top: 60px; } }
-aside .thumb #trigger-list-components { display: block; height: 40px; float: right; margin: 10px 15px; line-height: 40px; border: 1px dashed orange; }
+aside .thumb #trigger-list-components { display: block; height: 40px; float: left; margin: 10px 15px; line-height: 40px; }
 @media screen and (min-width: 1025px) { aside .thumb #trigger-list-components { display: none; } }
-aside nav { width: 100%; display: block; display: none; margin-top: 60px; border: 1px solid lime; }
+aside nav { width: 100%; display: block; display: none; margin-top: 60px; }
 @media screen and (min-width: 1025px) { aside nav { max-width: 200px; display: block; position: fixed; top: 100px; } }
-aside nav ul { margin: 0; padding: 0; display: block; list-style: none; }
-aside nav ul li { width: 100%; padding: 10px; margin: 0; border: 1px solid #ccc; font-size: 16px; line-height: 16px; background: #efefef; }
+aside nav ul { margin: 0; padding: 0; display: block; list-style: none; box-shadow: 0 2px 4px #666; }
+@media screen and (min-width: 1025px) { aside nav ul { box-shadow: none; } }
+aside nav ul li { width: 100%; padding: 10px; margin: 0; border-bottom: 1px solid #ccc; font-size: 16px; line-height: 16px; background: #efefef; }
 aside nav ul li ul { margin: 0; padding: 0; }
 aside nav ul li ul li { background: #ccc; }
 aside nav ul li a { display: block; }
 
 /* MAIN CONTENT */
-.content-container { border: 1px dashed lime; width: 100%; height: 100%; overflow: hidden; margin-top: 120px; background: #fff; }
+.content-container { width: 100%; height: 100%; overflow: hidden; margin-top: 120px; background: #fff; }
 @media screen and (min-width: 1025px) { .content-container { margin-top: 60px; } }
 
 section.main-content { margin: 0; padding: 0; width: 100%; background: #fff; min-height: 500px; }
 @media screen and (min-width: 1025px) { section.main-content { width: 80%; float: right; } }
 section.main-content .hero { display: block; margin: 0; padding: 1em; background: #3AADE2; }
+@media screen and (min-width: 1025px) { section.main-content .hero { height: 300px; } }
 section.main-content article { padding: 1em; }
 
 /* FOOTER */

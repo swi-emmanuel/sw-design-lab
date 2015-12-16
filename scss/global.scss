@@ -27,7 +27,6 @@ $break-1400  : 1400px;
 /* close commented backslash hack */
 
 .page-container {
-  border: 1px dashed red;
   width: 100%;
   height: 100%;
   min-height: 1000px;
@@ -99,10 +98,8 @@ h1.logo {
       height: 40px;
       line-height: 40px;
       float: left;
-      border: 1px dashed orange;
       a {
         display: block;
-        border: 1px solid orange;
         width: 100%;
         height: 100%;
       }
@@ -122,16 +119,14 @@ aside {
   height: 60px;
   position: fixed;
   top: 60px;
-  background: olive;
+  background: #ccc;
   height: 60px;
   box-shadow: 0 2px 4px #333;
   @media screen and (min-width: 1025px) {
     float: left;
     position: static;
-    margin-top: 60px;
     background: none;
     box-shadow: none;
-    border: 1px solid lime;
     width: 20%;
     min-height: 500px;
   }
@@ -140,6 +135,7 @@ aside {
       display: block;
       height: 60px;
       float: left;
+      border: 1px solid #aaa;
       @media screen and (min-width: 1025px) { 
         height: 100px;
         position: fixed;
@@ -149,10 +145,9 @@ aside {
     #trigger-list-components {
       display: block;
       height: 40px;
-      float: right;
+      float: left;
       margin: 10px 15px;
       line-height: 40px;
-      border: 1px dashed orange;
       @media screen and (min-width: 1025px) { 
         display: none;
       }
@@ -163,7 +158,6 @@ aside {
     display: block;
     display: none;
     margin-top: 60px;
-    border: 1px solid lime;
     @media screen and (min-width: 1025px) {
       max-width: 200px;
       display: block;
@@ -174,11 +168,15 @@ aside {
       margin: 0;padding: 0;
       display: block;
       list-style: none;
+      box-shadow: 0 2px 4px #666;
+      @media screen and (min-width: 1025px) {
+        box-shadow: none;
+      }
       li {
         width: 100%;
         padding: 10px;
         margin: 0;
-        border: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         font-size: 16px;
         line-height: 16px;
         background: #efefef;
@@ -205,7 +203,6 @@ aside {
 
 /* MAIN CONTENT */
 .content-container {
-  border: 1px dashed lime;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -228,6 +225,9 @@ section.main-content {
     display: block;
     margin:0;padding:1em;
     background: #3AADE2;
+    @media screen and (min-width: 1025px) { 
+      height: 300px;
+    }
   }
   article {
     padding: 1em;
