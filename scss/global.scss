@@ -37,6 +37,15 @@ $break-1400  : 1400px;
   min-height: 1000px;
   background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/noisy_grid.png');
 }
+
+/* Browser specific (not valid) styles to make preformatted text wrap */
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 ////////// Global END
 
 
