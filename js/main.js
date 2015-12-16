@@ -1,7 +1,8 @@
 
 
 // Show/Hide List of Assets / Components
-$('#trigger-list-components').click(function(){
-  $('.list-components').toggleClass('show');
+$(function(){
+  $('#list-components-trigger').click(function(){
+    $('.list-components').toggleClass('show');
+  });
 });
-
