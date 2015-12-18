@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Still Water - Projects</title>
+  <title>Still Water - Design Lab</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -36,13 +36,8 @@
       </div><!--/thumb-->      
       <nav class="list-components">
         <ul>
-          <li><a href="url_here">Kimpton</a></li>
-          <li><a href="#section-2">Mammoth</a></li>
-          <li><a href="url_here">DASH</a></li>
-          <li><a href="url_here">UMPG</a></li>
-          <li><a href="url_here">VMDR</a></li>
+          <li><a href="/projects/suiteh/index.html">Still Water</a></li>
           <li><a href="/projects/suiteh/index.html">SuiteH</a></li>
-          <li><a href="url_here">&laquo; Back to Projects</a></li>
         </ul>
       </nav><!--/list-components -->
     </aside>

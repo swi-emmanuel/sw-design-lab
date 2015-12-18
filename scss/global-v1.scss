@@ -1,0 +1,343 @@
+/* SW Lab - Global Styles v1*/
+
+// mobile-first breakpoints
+$break-320   : 320px;
+$break-500   : 500px;
+$break-768   : 768px;
+$break-1025  : 1025px;
+$break-1200  : 1200px;
+$break-1400  : 1400px;
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%;}
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.page-container {
+  /*position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0; */
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/noisy_grid.png');
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top:1px solid #eee;
+  margin: 0;
+  padding:1em 0;
+  background: #fff;
+}
+p.element-label {
+  font-size:12px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom:1em;
+}
+// ionicons : http://ionicons.com/
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+i {
+  display: inline-block;
+  font-size: 16px;
+  text-indent: 0;
+  margin-right: 5px;
+}
+////////// Global END
+
+
+
+
+
+////////// Helper Classes START
+.show {
+  display: block!important;
+  //display: block;
+}
+.hide {
+  display: none;
+}
+////////// Helper Classes END
+
+
+
+
+
+
+
+
+
+
+
+
+.container-fluid {
+  border: 1px solid red;
+}
+
+
+
+
+/* HEADER */
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 2px #666;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:100;
+}
+/* LOGO */
+h1.logo {
+  margin:0;padding: 0;
+  display: block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  background: url("http://placehold.it/40x40.jpg") no-repeat;
+  text-indent: -9999px;
+}
+
+
+/* NAVIGATION */
+.main-nav {
+  display: inline-block;
+  float: right;
+  ul {
+    margin:0;padding: 0;
+    li {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      float: left;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* SIDEBAR */
+aside {
+  margin: 0;padding: 0;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 60px;
+  box-shadow: 0 1px 2px #666;
+  background:#eee;
+  @media screen and (min-width: 1025px) {
+    float: left;
+    box-shadow: none;
+    width: 20%;
+    min-height: 800px;
+    max-width:200px;
+    background: none;
+  }
+  .thumb-trigger-container {
+    width: 100%;
+    float: left;
+    margin:0 auto;
+    background:#eee;
+    img {
+      display: block;
+      height: 50px;
+      float: left;
+      //border: 1px solid #aaa;
+      @media screen and (min-width: 1025px) { 
+        height: 100px;
+      }
+    }
+    #list-components-trigger {
+      display: block;
+      text-decoration: none;
+      height: 50px;
+      margin: 0;
+      padding: 0 2em;
+      text-align: center;
+      line-height: 50px;
+      @media screen and (min-width: 1025px) { 
+        display: none;
+      }
+    }
+  }
+  nav.list-components {
+    width: 100%;
+    margin:0 auto;
+    display: none;
+    @media screen and (min-width: 1025px) {
+      max-width: 200px;
+      float: left;
+      display: block;
+    }
+    .list-components.show {
+      display: block;
+    }
+    ul {
+      margin: 0;padding: 0;
+      list-style: none;
+      margin-top: 50px;
+      box-shadow: 0 2px 4px #666;
+      @media screen and (min-width: 768px) {
+        background:#eee;
+        overflow:hidden;
+      }
+      @media screen and (min-width: 1025px) {
+        margin-top:0;
+        box-shadow: none;
+      }
+      li {
+        width: 100%;
+        margin: 0;
+        padding:0;
+        border: 1px solid #eee;
+        display:inline-block;
+        font-size: 12px;
+        line-height: 60px;
+        background: #fff;
+        text-align: center;
+        width: 50%;
+        float: left;
+        text-align: left;
+        text-indent: 1em;
+        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 1025px) {
+          line-height: 40px;
+          border-bottom: 1px solid #eee;
+          width: 100%;
+          float: left;
+        }
+        i {
+          height: 40px;
+          line-height: 40px;
+          font-size: 16px;
+          width: 20px;
+          text-align: center;
+          margin-right: 5px;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          width:100%;
+          height:100%;
+          &:hover {
+            background:#eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* MAIN CONTENT */
+.content-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 110px;
+  transition: all .2s ease;
+  @media screen and (min-width: 1025px) { 
+    margin-top: 60px;
+    //max-width:1600px;
+    margin: 0 auto 0 auto;
+  }
+}
+section.main-content {
+  margin: 0;padding: 0;
+  width: 100%;
+  min-height: 500px;
+  @media screen and (min-width: 1025px) { 
+    width: 100%;
+    padding-left:200px;
+    float: left;
+    margin-top: 50px;
+  }
+  .hero {
+    display: block;
+    display: table;
+    width: 100%;
+    margin:0;padding:0;
+    background: #3AADE2;
+    height: 200px;
+    @media screen and (min-width: 1025px) { 
+      height: 300px;
+    }
+    .page-title {
+      width: 100%;
+      height: 100%;
+      display: table-cell;
+      padding: 2em 0 0 2em;
+      vertical-align: bottom;
+    }
+  }
+  article {
+    padding: 2em;
+    width: 100%;
+    min-height: 400px;
+    background: #fff;
+    p {
+      max-width: 800px;
+    }
+    img {
+      max-width: 100%;
+    }
+    ul {
+      list-style: none;
+      padding-left:0;
+      li {
+        line-height: 200%;
+        a {
+        text-decoration: none;
+       }
+      }
+       
+    }
+  }
+}
+
+
+
+
+/* FOOTER */
+footer {
+  background: #333;
+  padding: 1em;
+}
+
