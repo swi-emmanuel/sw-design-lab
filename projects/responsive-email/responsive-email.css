@@ -1,0 +1,147 @@
+/* Responsive Email */
+
+/* Basics */
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #ffffff;
+}
+table {
+  border-spacing: 0;
+  font-family: sans-serif;
+  color: #333333;
+}
+td {
+  padding: 0;
+}
+img {
+  border: 0;
+}
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.webkit {
+  max-width: 600px;
+}
+.outer {
+  Margin:0 auto;/* I always capitalise Margin so that Outlook.com won't strip it out – a neat little hack thanks to Wiktor's comment on this blog post. */
+  width:100%;
+  max-width:600px;
+}
+.full-width-image img {
+  width: 100%;
+  max-width: 600px;/* setting the max-width to match the pixel width that we set in the HTML (600px) because Windows Phone does not play nice when the max-width is also set to 100%. */
+  height: auto;
+}
+
+.inner {
+  padding: 10px;
+}
+p {
+  Margin: 0;
+}
+a {
+  color: #ee6a56;
+  text-decoration: underline;
+}
+/* You'll notice that I've used the <p> tag and a set of classes for styling them. I like using paragraphs to style text, and you can actually manage them really easily because of the capital-M Margin hack that I mentioned earlier. I also use <p class="h1"> instead of <h1> because Outlook.com has some h1, h2 and h3 styles that always override your styling. */
+.h1 {
+  font-size: 21px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+
+/* hr divider */
+hr.divider {
+  display:inline-block!important;
+  width:100%!important;
+  height:1px!important;
+  background-color:#ccc!important;
+  margin:10px 0;
+  border:0!important;
+}
+
+
+/* One column layout */
+.one-column .contents {
+  text-align: left;
+}
+.one-column p {
+  font-size: 14px;
+  Margin-bottom: 10px;
+}
+
+
+
+/*Two column layout*/
+.two-column {
+  text-align: center;
+  font-size: 0;
+}
+.two-column .column {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+/* For tables that hold content */
+.contents {
+  width: 100%;
+}
+.two-column .contents {
+  font-size: 14px;
+  text-align: left;
+}
+.two-column img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+.two-column .text {
+  padding-top: 10px;
+}
+
+
+
+/* Three column layout */
+.three-column {
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.three-column .column {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+.three-column .contents {
+  font-size: 14px;
+  text-align: center;
+}
+.three-column img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+.three-column .text {
+  padding-top: 10px;
+}
+
+
+
+/* Custom */
+h1 {color:red;}
